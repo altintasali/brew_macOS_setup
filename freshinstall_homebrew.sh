@@ -8,10 +8,10 @@ echo "[INSTALL] HomeBrew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 wait
 
-# Homebrew PATH
-echo "export LC_ALL=en_US.UTF-8" >> ~/.bash_profile
-echo "export LANG=en_US.UTF-8" >> ~/.bash_profile
-echo "export PATH=/usr/local/bin:$PATH" >> ~/.bash_profile && source ~/.bash_profile
+## Homebrew PATH
+#echo "export LC_ALL=en_US.UTF-8" >> ~/.bash_profile
+#echo "export LANG=en_US.UTF-8" >> ~/.bash_profile
+#echo "export PATH=/usr/local/bin:$PATH" >> ~/.bash_profile && source ~/.bash_profile
 
 #----------------------------------------------------------
 # Command Line Tools
@@ -21,7 +21,7 @@ brew install cask
 wait
 
 echo "[INSTALL] iTerm2"
-brew cask install iterm2
+brew install --cask iterm2
 wait
 
 echo "[INSTALL] htop"
@@ -52,76 +52,75 @@ echo "[INSTALL] tldr"
 brew install tldr
 wait
 
-echo "[INSTALL] unrar"
-brew install unrar
-wait
 
 #----------------------------------------------------------
 # R & RStudio
 #----------------------------------------------------------
 echo "[INSTALL] R"
-brew cask install r
+brew install --cask r
 wait
 
-echo 'Sys.setlocale(category="LC_ALL", locale = "en_US.UTF-8")' >> ~/.bash_profile
+#echo 'Sys.setlocale(category="LC_ALL", locale = "en_US.UTF-8")' >> ~/.bash_profile
 
 echo "[INSTALL] RStudio"
-brew cask install rstudio
+brew install --cask rstudio
 wait
 
 #----------------------------------------------------------
 # MacOS Apps
 #----------------------------------------------------------
 echo "[INSTALL] Google Chrome"
-brew cask install google-chrome
+brew install --cask google-chrome
 wait
 
 echo "[INSTALL] Firefox"
-brew cask install firefox
+brew install --cask firefox
 wait
 
 echo "[INSTALL] VLC"
-brew cask install vlc
+brew install --cask vlc
 wait
 
 echo "[INSTALL] Skype"
-brew cask install skype
+brew install --cask skype
 wait
 
 echo "[INSTALL] Rectangle"
-brew cask install rectangle
+brew install --cask rectangle
 wait
 
 echo "[INSTALL] Spotify"
-brew cask install spotify
+brew install --cask spotify
 wait
 
 echo "[INSTALL] Steam"
-brew cask install steam
+brew install --cask  steam
 wait
 
 echo "[INSTALL] Dropbox"
-brew cask install dropbox
+brew install --cask  dropbox
 wait
 
 echo "[INSTALL] OneDrive"
-brew cask install onedrive
+brew install --cask  onedrive
 wait
 
 echo "[INSTALL] Mega"
-brew cask install megasync
+brew install --cask  megasync
 wait
 
 echo "[INSTALL] Yandex-Disk"
-brew cask install yandex-disk
+brew install --cask  yandex-disk
 wait
 
 echo "[INSTALL] WebTorrent"
-brew cask install webtorrent
+brew install --cask webtorrent
 wait
 
 echo "[INSTALL] PDFSAM-Basic"
-brew cask install pdfsam-basic
+brew install --cask  pdfsam-basic
 wait
 
-
+echo "[INSTALL] Sublime"
+brew install --cask sublime-text
+wait
