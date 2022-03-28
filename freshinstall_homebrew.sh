@@ -66,6 +66,10 @@ echo "[INSTALL] RStudio"
 brew install --cask rstudio
 wait
 
+echo "[INSTALL] GCC (c++, fortran compilers)"
+brew install gcc
+wait
+
 #----------------------------------------------------------
 # MacOS Apps
 #----------------------------------------------------------
