@@ -124,3 +124,7 @@ wait
 echo "[INSTALL] Sublime"
 brew install --cask sublime-text
 wait
+
+echo "[INSTALL] Slack"
+brew install --cask slack
+wait
