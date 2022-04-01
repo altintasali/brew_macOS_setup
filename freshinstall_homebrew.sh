@@ -76,7 +76,17 @@ wait
 echo "[INSTALL] IGV"
 brew install --cask igv
 wait
- 
+
+echo "[INSTALL] Zotero"
+brew install --cask zotero
+wait
+
+#----------------------------------------------------------
+# Useful tools
+#----------------------------------------------------------
+echo "[INSTALL] MELD"
+brew install --cask meld
+wait
 
 #----------------------------------------------------------
 # MacOS Apps
