@@ -60,6 +60,10 @@ echo "[INSTALL] R"
 brew install --cask r
 wait
 
+echo "[INSTALL] XQuartz"
+brew install --cask xquartz
+done
+
 #echo 'Sys.setlocale(category="LC_ALL", locale = "en_US.UTF-8")' >> ~/.bash_profile
 
 echo "[INSTALL] RStudio"
