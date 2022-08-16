@@ -57,6 +57,12 @@ echo "[INSTALL] tldr"
 brew install tldr
 wait
 
+echo "[INSTALL] coreutils"
+brew install coreutils
+wait
+
+#echo 'PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"' > ~/.bash_profile
+
 #----------------------------------------------------------
 # R & RStudio
 #----------------------------------------------------------
