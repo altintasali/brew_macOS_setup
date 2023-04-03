@@ -25,6 +25,15 @@ wait
 #brew install cask
 #wait
 
+echo "[INSTALL] Linuxify"
+git clone https://github.com/fabiomaia/linuxify.git
+cd linuxify/
+./linuxify install
+wait
+cd ..
+rm -rf ./linuxify
+wait
+
 echo "[INSTALL] iTerm2"
 brew install --cask iterm2
 wait
@@ -82,6 +91,13 @@ wait
 
 echo "[INSTALL] GCC (c++, fortran compilers)"
 brew install gcc
+wait
+
+#----------------------------------------------------------
+# Python
+#----------------------------------------------------------
+echo "[INSTALL] PyCharm"
+brew install --cask pycharm-ce
 wait
 
 #----------------------------------------------------------
