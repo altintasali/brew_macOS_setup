@@ -75,6 +75,29 @@ wait
 #----------------------------------------------------------
 # R & RStudio
 #----------------------------------------------------------
+echo "[INSTALL] MacTex"
+brew install --cask mactex
+wait
+
+echo "[INSTALL] GFORTRAN"
+brew install gfortran mpich
+wait
+
+echo "[INSTALL] GCC (c++, fortran compilers)"
+brew install gcc
+wait
+
+echo "[INSTALL] OpenMP"
+brew install libomp
+wait
+
+echo "[INSTALL] OpenMP"
+brew install llvm
+wait
+## Follow guidelines for 'datatable'
+## https://github.com/Rdatatable/data.table/wiki/Installation#openmp-enabled-compiler-for-mac
+
+
 echo "[INSTALL] R"
 brew install --cask r
 wait
@@ -87,10 +110,6 @@ wait
 
 echo "[INSTALL] RStudio"
 brew install --cask rstudio
-wait
-
-echo "[INSTALL] GCC (c++, fortran compilers)"
-brew install gcc
 wait
 
 #----------------------------------------------------------
